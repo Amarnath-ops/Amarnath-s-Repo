@@ -1,0 +1,637 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap');
+@font-face {
+  font-family: 'Sodo Sans';
+  src: url('path/to/SodoSans-Regular.woff2') format('woff2'),
+       url('path/to/SodoSans-Regular.woff') format('woff'),
+       url('font/SoDoSans-Regular.ttf') format('truetype');
+  font-weight:normal;
+  font-style: normal;
+}
+@font-face {
+  font-family:'Pike Regular';
+  src: url(font/PikeRegular.ttf);
+}
+@font-face {
+  font-family: 'Sodo Sans Light';
+  src: url('font/SoDoSans-Light.ttf') format('truetype');
+  font-weight:normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Sodo Sans Bold';
+  src: url(font/SoDoSans-Bold.ttf);
+}
+:root{
+  --color-primary:#00754a;
+  --color-secondary:#d50032;
+  --color-extra:#d4e9e2;
+}
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+html,body{
+  font-family:'Sodo Sans Lighs','Sodo Sans',sans-serif;
+  font-weight:lighter;
+  line-height:1.4;
+  color:#000;
+  background-color: #f9f9f9;
+  overflow-x: hidden;
+}
+a{
+  color:#000;
+  font-size: 15px;
+}
+ul{
+  list-style:none;
+}
+p{
+  margin:5px 0px;
+  line-height: 1.7;
+}
+img{
+  max-width: 100;
+}
+
+/* nav bar */
+.nav-bar{
+  position: fixed;
+  z-index:10;
+  width:100%;
+  height:72.8px;
+  background-color:#f9f9f9;
+  padding:20px;
+  box-shadow:0 1px 3px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.06), 0 0 2px rgba(0, 0, 0, 0.07);
+}
+.navbar-container{
+  display:flex;
+  justify-content:space-between;
+}
+.nav-bar ul{
+  display:flex;
+}
+.nav-bar li{
+  margin:0 15px;
+}
+.navbar-nav-right{
+  display:flex;
+}
+
+.nav-brand img {
+  width:40px;
+  height:40px;
+  margin-left: 112.8px;
+  margin-top: -4px;
+}
+.navbar-nav-right
+img{
+  height: 20px;
+  width:20px;
+  margin-right: 100 px; 
+}
+.nav-bar a{
+  color:#000;
+  text-decoration: none;
+}
+.nav-bar a:hover{
+  color:var(--color-primary);
+}
+.nav-bar a:hover{
+  color:var(--color-primary);
+  font-weight: 600;
+  font-size: 14px;
+}
+.navbar-nav-left{
+  flex:1;
+  margin-left:43px;
+  margin-top:1.5px;
+}
+.navbar-nav-left li{
+  margin-right: 50px;
+}
+.navbar-nav-right{
+  margin-right:80px;
+  margin-top: -2px;
+}
+.navbar-nav-right  input{
+  border:none;
+  width: 264px;
+  height: 36px;
+  padding-right:30px;
+  padding-left:53px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-radius:20px;
+  box-shadow:  0 0 2px #00000012, 0 2px 2px #0000000f, 0 1px 3px #0000001a;;
+}
+.navbar-nav-right img{
+  margin-left: 5px;
+  margin-left: 5px;
+}
+.search-icon{
+  margin-top:-25px;
+  margin-left:15px;
+}
+input::placeholder{
+  font-family:'Sodo Sans Light';
+  font-size:12px;
+}
+.account-icon img{
+  height: 32px;
+  width: 32px;
+  margin-top: 2px;
+}
+.account-icon {
+  margin-right:121px;
+  margin-top: -2px;
+}
+/* Box */
+
+.box-a-card{
+  display: inline-block;
+  height: 78.4px;
+  width:100%;
+  margin-top:76px;
+  background-color: #1e3932;
+}
+.box-a-card-body{
+  margin:0px 102px;
+  display: flex;
+  justify-content: space-between;
+}
+.card-body-left-text{
+  color:#f9f9f9;
+  font-size: 20px;
+  font-family: 'Sodo Sans Light';
+}
+.card-body-left-text p{
+  margin-left: 24.5px;
+  margin-top:19px;
+}
+.card-body-right-btn{
+  background-color: #1e3932;
+  border-width: 1px;
+  border-color: #f9f9f9;
+  border-style: solid;
+  border-radius:30px ;
+  font-size: 12.1px;
+  padding-bottom: 2px;
+  font-family: 'Sodo sans';
+  width: 96px;
+  height:32px;
+  color: #f9f9f9;
+  margin-right: 59px;
+  margin-top:20px;
+  white-space: nowrap;
+}
+.box-b-container{
+  background-color: #f9f9f9;
+  height: 360px;
+  width:100%;
+}
+.box-b-card{
+  height: 276px;
+  width:1300px;
+  margin-left:100px;
+  position:relative;
+  top: 72px;
+  left:30px;
+}
+.box-b-bg-img{
+  width:1269px;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px #00000012, 0 4px 5px #0000000f, 0 1px 10px #0000001a;
+  
+}
+.box-b-container{
+  height: 320px;
+  width: 100%;
+  background-color:#f9f9f9;
+}
+.box-b-bg-img img{
+  height: 100%;
+  width:100%;
+  transform: scale(1.20);
+}
+.box-b-coffee-img img{
+  height: 100%;
+  width: 100%;
+}
+.box-b-coffee-img{
+  width: 100px;
+  transform: translateY(-96%);
+}
+.box-b-text{
+  height: 100px;
+  width:500px;
+  line-height: 3.8rem;
+  transform: translateY(-415%) translateX(30.5%);
+  color:#000000de;
+}
+.box-b-text p{
+  font-size: 14px;
+}
+.box-b-text h3{
+  font-size: 20px;
+}
+.b-box-left-arrow-button img{
+  transform: translateY(-575%) translateX(-48%);
+}
+.b-box-right-arrow-button img{
+  transform:translateY(-685%) translateX(1617%);
+}
+.b-box-button button{
+  background-color: #00754a;
+  color: #f9f9f9;
+  border: none;
+  border-radius: 100px;
+  height: 49px;
+  width: 200px;
+  font-size:13px;
+  font-family: 'Sodo Sans';
+  margin-left:1040px;
+  transform: translateY(-1130%);
+  font-weight: bold;
+}
+.box-b-bottom-line{
+  height:2px;
+  width:86.75px;
+  background:#019f65;
+  position: relative;
+  bottom: 512px;
+  left:503px;
+  border-radius:130px;
+}
+.box-b-bottom-opc-line{
+  height: 2px;
+  width:261.75px;
+  background:#00754a47;
+  position: relative;
+  bottom: 514px;
+  left:503px;
+  border-radius:130px;
+}
+
+/*---- box c---*/
+.box-c{
+  background-color: #f9f9f9;
+  width:100%;
+  height:300px;
+}
+.box-c-heading{
+  margin-left:135px;
+  margin-top:62px;
+}
+.box-c-heading p{
+  font-family: 'Sodo Sans Bold';
+  font-size: 24px;
+  width:1272px;
+  height:28.8px;
+  color:#1e3932;
+}
+.box-c-image-grid{
+display: flex;
+}
+.box-c-image-grid img{
+  width: 108px;
+  height: 108px;
+  border-radius: 108px;
+  object-fit: cover;
+  margin-left: 125px;
+  margin-top: 30px;
+}
+.box-c-image-1 p{
+  font-family: 'Sodo Sans';
+  margin-left: 162px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: -3px;
+}
+.box-c-image-2 p{
+  font-family: 'Sodo Sans';
+  margin-left: 147px;
+  font-size: 14px;
+  margin-top: -3px;
+  font-weight: bold;
+}
+.box-c-image-3 p{
+  font-family: 'Sodo Sans';
+  margin-left: 157px;
+  margin-top: -3px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.box-c-image-4 p{
+  font-family: 'Sodo Sans';
+  margin-left: 165px;
+  font-size: 14px;
+  margin-top: -3px;
+  font-weight: bold;
+}
+.box-c-image-5 p{
+  font-family: 'Sodo Sans';
+  margin-left: 138px;
+  font-size: 14px;
+  margin-top: -3px;
+  font-weight: bold;
+}
+.box-c-image-6 p{
+  font-family: 'Sodo Sans';
+  margin-left: 123px;
+  margin-top:-3px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
+/* Product details*/
+
+
+.box-d-container{
+  background-color:#edebe9;
+  height: 336px;
+  width:100%;
+}
+.box-d-row-1{
+  background-color: #edebe9;
+  width:100%;
+  height: 76px;
+}
+.box-d-row-1-text p{
+  font-size: 24px;
+  font-family:'Sodo Sans Bold';
+  margin-left:116px;
+  position:relative;
+  top:35px;
+  color: #1e3932;
+}
+.box-d-row-2-text p{
+  position:relative;
+  left:1350px;
+  font-size: 12px;
+  font-family:'Sodo Sans';
+  color: #00754a;
+  margin-top: -14px;
+  font-weight: bold;
+  display: inline-block;
+}
+.box-d-image-effect img{
+  margin-left: 1464px;
+  transform:translateY(-90%);
+  width: 57px;
+  height: 70px;
+}
+.java-chip-card{
+  height:160px;
+  width:405.66px;
+  background-color:#f9f9f9 ;
+  padding:16px 24px;
+  margin-left: 130px;
+  margin-top: 30px;
+  box-shadow:0 0 2px #00000012,0 2px 2px #0000000f,0 1px 3px #0000001a;
+  border-radius: 8px;
+}
+.java-chip-image img{
+  width:80px;
+  height:80px;
+  border-radius: 8px;
+}
+.java-chip-details{
+  margin-left: 100px;
+  margin-top: -22%;
+}
+.java-chip-details .title-product{
+  font-size: 14px;
+  font-weight:bold;
+  margin-top:-11px;
+}
+.java-chip-details .description-product{
+  font-size:15px;
+  font-family:'Pike Regular';
+  margin-top: -11px;
+}
+ .java-chip-button button{
+  background-color: #00754a;  
+  color:white;
+  border: none;
+  height:30px;
+  width:96px;
+  border-radius:45px;
+  font-size:12px;
+  font-weight: bold;
+  box-shadow:0 4px 15px #a3a3a3ad ;
+  margin-left:260px;
+  margin-top: 20px;
+ }
+ .java-chip-price span{
+  font-weight: bold;
+  font-size:14px;
+ }
+.java-chip-price{
+  margin-top:-20px;
+}
+
+/*--- Box e---*/
+  .box-e-col-1{
+    width: 100%;
+    height:40px;
+    background-color: #ffffff;
+  }
+  .box-e-container{
+    height:496px;
+    width:100%;
+    background-color: #edebe9;
+  
+  }
+  .box-e-1-row-text{
+    height:30px;
+    width:1300px;
+    margin-left: 110px;
+    padding-top: 30px;
+  }
+.text-1{
+    font-size: 24px;
+    height: 22.4px;
+    width:450.7px;
+    font-family: 'Sodo Sans Bold';
+    color: #1e3932;
+  }
+  .text-2{
+    font-size: 12.8px;
+    font-family:'Sodo Sans';
+    font-weight: bold;
+    color:#00754a;
+  }
+  .box-e-1-row-text .text-2{
+    display:flex;
+    justify-content:flex-end;
+    margin-top: -32px;
+    margin-right: 2px;
+  }
+  .box-e-image img{
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .box-e-image{
+    width:1269px;
+    height:372px;
+    border-radius: 10px;
+    margin-left:120px;
+    margin-top:60px;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  .box-e-container:hover img{
+    transform:scale(110%);
+      transition: transform 0.75s;
+  }
+  .to-make-gradient{
+    position: relative;
+    width:1269px;
+    height:372px;
+    margin-left:120px;
+    top:-372px;
+    border-radius: 10px;
+    background: linear-gradient(to top,#000,#00000000);
+    cursor: pointer;
+    background-color: #00000000;
+    transition: background 0.75s;
+  }
+  .to-make-gradient:hover{
+    background-color:#00000086;
+  }
+
+  .box-e-image-text{
+    position:relative;
+    left: 155px;
+    top: -550px;
+    color: white;
+  }
+  .box-e-image-text p:first-child{
+    font-size:28px;
+    font-family:'Sodo Sans';
+    font-weight: bold;
+  }
+  .box-e-image-text p:last-child{
+    font-size: 14px;
+    font-family:'Sodo Sans Light';
+    width:888.3px;
+    height:21px;
+
+  }
+  .box-e-image-text .btn-1{
+    border:none;
+    background-color: #ffffff;
+    color: #000;
+    width:200px;
+    height:32px;
+    border-radius:16px;
+    font-size:12px;
+    font-family: 'Sodo Sans';
+    font-weight:500px;
+    margin-top: 25px;
+  }
+  .box-e-image-text .btn-2{
+    border:none;
+    background-color: #e6edeb;
+    color: #096;
+    width:80px;
+    height:15px;
+    border-radius:4px;
+    font-size:9px;
+    font-family: 'Sodo Sans';
+    font-weight:500;
+    margin-left: -203px;
+    position:relative;
+    top:-300px;
+  }
+  .box-f-blank-box{
+    height: 120px;
+    width:100vw;
+    background-color: #f9f9f9;
+  }
+  .footer{
+    height:60em;
+    width:100vw;
+    background-color:#0e382c;  
+  }
+  .footer-container{
+    display: flex;
+    color: #ffffff;
+    font-size:14px;
+    margin-left: 115px;
+  }
+  .footer-container div{
+    margin-top: 120px;
+    margin-right: 130px;
+  }
+  .footer-container p{
+    line-height: 30px;
+    font-family: 'Sodo Sans Light';
+    margin-top: 20px;
+  }
+  .Social-media-text{
+    position: relative;
+    top: -30px;
+    color: white;
+    font-family: 'Sodo Sans';
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 100px;
+  }
+  .Social-media-icons{
+    position:relative;
+    margin-left:100px;
+    top:-30px;
+    width: 153px;
+    height:51 px;
+  }
+  .Social-media-icons img{
+    margin-right: 10px;
+  }
+  .Social-Media-app-store{
+    display:grid;
+    margin-left: 320px;
+    margin-top: -100px;
+    padding-bottom: 60px;
+  }
+  .Social-Media-app-store img{
+    margin-bottom: 10px;
+  
+  }
+  .last-line{
+    height:0.5px;
+    width:1325px;
+    background-color: #edebe9;
+    margin-left:100px;
+    opacity: 50%;
+  }
+  .last-line-words{
+    display:flex;
+    color: #edebe9;
+    font-size: 12px;
+    margin-top: 10px;
+    padding-left: 100px;
+  }
+  .last-line-words p{
+    margin-left: 10px;
+    font-size: 12px;
+    font-family: 'Sodo Sans Light';
+  }
+  .mid-line{
+    height:10px;
+    width:1px;
+    background-color: #edebe9;
+    margin-top:10px;
+    margin-left: 5px;
+  }
+  .last-line-words h6{
+    margin-left: 720px;
+  }
